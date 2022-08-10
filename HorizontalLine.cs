@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace snakeOOP
 {
-    class HorizontalLine
+    class HorizontalLine : Figure
     {
-      List<Point> pList;
-
      public HorizontalLine(int xLeft, int xReight, int y, char sym)
      {
          pList = new List<Point>();
@@ -16,13 +14,7 @@ namespace snakeOOP
              pList.Add( p );
          }
      }
-     public void Drow()
-     {
-            foreach (Point p in pList)
-         {
-             p.Draw();
-         }
-     }
+     
     }
 
 }
